@@ -1,386 +1,314 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-			  
-		<link rel = "stylesheet"
-			  href = "Style.css">
-			  
-		<script type = "text/javascript"
-			    src = "Libraries/Client.js">
-		</script>
-		
-		<title>
-			Holidays
-		</title>
-		
-	</head>
-	
-	<body onload = "Index_OnLoad()">
-		<div class = "page">
-			<div class = "mainTopPanel">
-				<div class = "mainTopPanelContainer">
-					<span class = "mainTopPanelButton">
-						<a href = "Index.html">
-							<img src = "Pictures/Buttons/ButtonHome.png" 
-								 alt = "Home" 
-								 style = "width: auto; 
+
+<head>
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" href="Style.css">
+
+	<script type="text/javascript" src="Libraries/Client.js">
+	</script>
+
+	<title>
+		Holidays
+	</title>
+
+</head>
+
+<body onload="Index_OnLoad()">
+	<div class="page">
+		<div class="mainTopPanel">
+			<div class="mainTopPanelContainer">
+				<span class="mainTopPanelButton">
+					<a href="Index.html">
+						<img src="Pictures/Buttons/ButtonHome.png" alt="Home" style="width: auto; 
 										  height: auto; 
-										  border: 0;"
-								 onmouseenter = "ButtonHome_OnMouseEnter(this);"
-								 onmouseleave = "ButtonHome_OnMouseLeave(this);">
-						</a>
-						
-						<span class = "mainTopPanelButton">
-							<a href = "Web/Search.html">
-								<img src = "Pictures/Buttons/ButtonSearch.png" 
-									 alt = "Search" 
-									 style = "width: auto; 
+										  border: 0;" onmouseenter="ButtonHome_OnMouseEnter(this);" onmouseleave="ButtonHome_OnMouseLeave(this);">
+					</a>
+
+					<span class="mainTopPanelButton">
+						<a href="Web/Search.html">
+							<img src="Pictures/Buttons/ButtonSearch.png" alt="Search" style="width: auto; 
 											  height: auto; 
-											  border: 0;"
-									 onmouseenter = "ButtonSearch_OnMouseEnter(this);"
-									 onmouseleave = "ButtonSearch_OnMouseLeave(this);">
-							</a>
-							
-							<span class = "mainTopPanelButton">
-								<a href = "Web/ContactUs.html">
-									<img src = "Pictures/Buttons/ButtonContactUs.png" 
-										 alt = "Contact Us" 
-										 style = "width: auto; 
+											  border: 0;" onmouseenter="ButtonSearch_OnMouseEnter(this);" onmouseleave="ButtonSearch_OnMouseLeave(this);">
+						</a>
+
+						<span class="mainTopPanelButton">
+							<a href="Web/ContactUs.html">
+								<img src="Pictures/Buttons/ButtonContactUs.png" alt="Contact Us" style="width: auto; 
 												  height: auto; 
-												  border: 0;"
-										 onmouseenter = "ButtonContactUs_OnMouseEnter(this);"
-										 onmouseleave = "ButtonContactUs_OnMouseLeave(this);">
-								</a>
-							</span>
+												  border: 0;" onmouseenter="ButtonContactUs_OnMouseEnter(this);" onmouseleave="ButtonContactUs_OnMouseLeave(this);">
+							</a>
 						</span>
 					</span>
-				</div>
-			</div>
-			
-			<div class = "pageContent">
-				<table style = "width: 100%; 
-								border: 0px; 
-								text-align: center;">
-					<!-- ------------------------------------------------------------------------------- -->
-					<tr>
-						<td style = "width: 49.5%">
-							<table id = "tableHoliday1">
-								<tr>
-									<td>
-										<img id = "imgHoliday1"
-											 alt = "imgHoliday1" 
-											 style = "width: 100%; 
-													  height: auto; 
-													  border: 0; 
-													  visibility: hidden;">
-									</td>
-								</tr>
-								
-								<tr>
-									<td>
-										<span id = "priceHoliday1"
-											  class = "priceStyle"
-											  style = "visibility: hidden;">
-										</span>
-									</td>
-								</tr>
-								
-								<tr>
-									<td>
-										<span id = "shortDescriptionHoliday1"
-											  class = "shortDescriptionStyle"
-											  style = "visibility: hidden;">
-										</span>
-									</td>
-								</tr>
-							</table>
-						</td>
-						
-						<td>
-							<span style = "visibility: hidden">
-								Space
-							</span>
-						</td>
-						
-						<td style = "width: 49.5%">
-							<table id = "tableHoliday2">
-								<tr>
-									<td>
-										<img id = "imgHoliday2"
-											 alt = "imgHoliday2" 
-											 style = "width: 100%; 
-													  height: auto; 
-													  border: 0; 
-													  visibility: hidden;">
-									</td>
-								</tr>
-								
-								<tr>
-									<td>
-										<span id = "priceHoliday2"
-											  class = "priceStyle"
-											  style = "visibility: hidden;">
-										</span>
-									</td>
-								</tr>
-								
-								<tr>
-									<td>
-										<span id = "shortDescriptionHoliday2"
-											  class = "shortDescriptionStyle"
-											  style = "visibility: hidden;">
-										</span>
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					
-					<!-- ------------------------------------------------------------------------------- -->
-					<tr>
-						<td>
-							<span style = "visibility: hidden">
-								Space
-							</span>
-						</td>
-					</tr>
-					<!-- ------------------------------------------------------------------------------- -->
-					
-					
-						<td style = "width: 49.5%">
-							<table id = "tableHoliday3">
-								<tr>
-									<td>
-										<img id = "imgHoliday3"
-											 alt = "imgHoliday3" 
-											 style = "width: 100%; 
-													  height: auto; 
-													  border: 0; 
-													  visibility: hidden;">
-									</td>
-								</tr>
-								
-								<tr>
-									<td>
-										<span id = "priceHoliday3"
-											  class = "priceStyle"
-											  style = "visibility: hidden;">
-										</span>
-									</td>
-								</tr>
-								
-								<tr>
-									<td>
-										<span id = "shortDescriptionHoliday3"
-											  class = "shortDescriptionStyle"
-											  style = "visibility: hidden;">
-										</span>
-									</td>
-								</tr>
-							</table>
-						</td>
-						
-						<td>
-							<span style = "visibility: hidden">
-								Space
-							</span>
-						</td>
-						
-						<td style = "width: 49.5%">
-							<table id = "tableHoliday4">
-								<tr>
-									<td>
-										<img id = "imgHoliday4"
-											 alt = "imgHoliday4" 
-											 style = "width: 100%; 
-													  height: auto; 
-													  border: 0; 
-													  visibility: hidden;">
-									</td>
-								</tr>
-								
-								<tr>
-									<td>
-										<span id = "priceHoliday4"
-											  class = "priceStyle"
-											  style = "visibility: hidden;">
-										</span>
-									</td>
-								</tr>
-								
-								<tr>
-									<td>
-										<span id = "shortDescriptionHoliday4"
-											  class = "shortDescriptionStyle"
-											  style = "visibility: hidden;">
-										</span>
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					
-					<!-- ------------------------------------------------------------------------------- -->
-					<tr>
-						<td>
-							<span style = "visibility: hidden">
-								Space
-							</span>
-						</td>
-					</tr>
-					<!-- ------------------------------------------------------------------------------- -->
-					
-					<tr>
-						<td style = "width: 49.5%">
-							<table id = "tableHoliday5">
-								<tr>
-									<td>
-										<img id = "imgHoliday5"
-											 alt = "imgHoliday5" 
-											 style = "width: 100%; 
-													  height: auto; 
-													  border: 0; 
-													  visibility: hidden;">
-									</td>
-								</tr>
-								
-								<tr>
-									<td>
-										<span id = "priceHoliday5"
-											  class = "priceStyle"
-											  style = "visibility: hidden;">
-										</span>
-									</td>
-								</tr>
-								
-								<tr>
-									<td>
-										<span id = "shortDescriptionHoliday5"
-											  class = "shortDescriptionStyle"
-											  style = "visibility: hidden;">
-										</span>
-									</td>
-								</tr>
-							</table>
-						</td>
-						
-						<td>
-							<span style = "visibility: hidden">
-								Space
-							</span>
-						</td>
-						
-						<td style = "width: 49.5%">
-							<table id = "tableHoliday6">
-								<tr>
-									<td>
-										<img id = "imgHoliday6"
-											 alt = "imgHoliday6" 
-											 style = "width: 100%; 
-													  height: auto; 
-													  border: 0; 
-													  visibility: hidden;">
-									</td>
-								</tr>
-								
-								<tr>
-									<td>
-										<span id = "priceHoliday6"
-											  class = "priceStyle"
-											  style = "visibility: hidden;">
-										</span>
-									</td>
-								</tr>
-								
-								<tr>
-									<td>
-										<span id = "shortDescriptionHoliday6"
-											  class = "shortDescriptionStyle"
-											  style = "visibility: hidden;">
-										</span>
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					
-					<!-- ------------------------------------------------------------------------------- -->
-				</table>
-				
-				<!-- ------------------------------------------------------------------------------- -->
-				<table style = "padding-left: 42%; padding-top: 5%; border: 0px;">
-					<tr>
-						<td>
-							<img id = "imgPreviousPage"
-								 alt = "imgPreviousPage" 
-								 src = "Pictures/Buttons/ButtonArrowLeft-Grey.png"
-								 style = "width: auto; 
-										  height: auto; 
-										  border: 0;">
-						</td>
-						
-						<td>
-							<span id = "spanCurrentPage">
-							</span>
-						</td>
-						
-						<td>
-							<img id = "imgNextPage"
-								 alt = "imgNextPage" 
-								 src = "Pictures/Buttons/ButtonArrowRight-Grey.png"
-								 style = "width: auto; 
-										  height: auto; 
-										  border: 0;">
-						</td>
-					</tr>
-				</table>
-				<!-- ------------------------------------------------------------------------------- -->
-			</div>
-		</div>
-		
-		<div class = "rightBanner">
-			<div class = "rightBannerMiddleLeft">
-				<a href = "Web/Register.html"
-				   id = "buttonRegister">
-					<img src = "Pictures/Buttons/ButtonRegister.png" 
-						 alt = "Register" 
-						 style = "width: auto; 
-								  height: auto; 
-								  border: 0;"
-						 onmouseenter = "ButtonRegister_OnMouseEnter(this);"
-						 onmouseleave = "ButtonRegister_OnMouseLeave(this);">
-				</a>
-				<span id = "spanUserNames"
-					  style = "display: none;">
-					User Names
 				</span>
 			</div>
-			
-			<div class = "rightBannerMiddleRight">
-				<a href = "Web/Login.html"
-				   id = "buttonLogin">
-					<img src = "Pictures/Buttons/ButtonLogIn.png" 
-						 alt = "LogIn" 
-						 style = "width: auto; 
-								  height: auto; 
-								  border: 0;"
-						 onmouseenter = "ButtonLogin_OnMouseEnter(this);"
-						 onmouseleave = "ButtonLogin_OnMouseLeave(this);">
-				</a>
-				<a href = "Index.html"
-				   id = "buttonLogout"
-				   onclick = "Logout()"
-				   style = "display: none">
-					<img src = "Pictures/Buttons/ButtonLogOut.png" 
-						 alt = "LogOut" 
-						 style = "width: auto; 
-								  height: auto; 
-								  border: 0;"
-						 onmouseenter = "ButtonLogout_OnMouseEnter(this);"
-						 onmouseleave = "ButtonLogout_OnMouseLeave(this);">
-				</a>
-			</div>
 		</div>
-	</body>
+
+		<div class="pageContent">
+			<table style="width: 100%; 
+								border: 0px; 
+								text-align: center;">
+				<!-- ------------------------------------------------------------------------------- -->
+				<tr>
+					<td style="width: 49.5%">
+						<table id="tableHoliday1">
+							<tr>
+								<td>
+									<img id="imgHoliday1" alt="imgHoliday1" style="width: 100%; 
+													  height: auto; 
+													  border: 0; 
+													  visibility: hidden;">
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<span id="priceHoliday1" class="priceStyle" style="visibility: hidden;">
+									</span>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<span id="shortDescriptionHoliday1" class="shortDescriptionStyle" style="visibility: hidden;">
+									</span>
+								</td>
+							</tr>
+						</table>
+					</td>
+
+					<td>
+						<span style="visibility: hidden">
+							Space
+						</span>
+					</td>
+
+					<td style="width: 49.5%">
+						<table id="tableHoliday2">
+							<tr>
+								<td>
+									<img id="imgHoliday2" alt="imgHoliday2" style="width: 100%; 
+													  height: auto; 
+													  border: 0; 
+													  visibility: hidden;">
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<span id="priceHoliday2" class="priceStyle" style="visibility: hidden;">
+									</span>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<span id="shortDescriptionHoliday2" class="shortDescriptionStyle" style="visibility: hidden;">
+									</span>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<!-- ------------------------------------------------------------------------------- -->
+				<tr>
+					<td>
+						<span style="visibility: hidden">
+							Space
+						</span>
+					</td>
+				</tr>
+				<!-- ------------------------------------------------------------------------------- -->
+
+
+				<td style="width: 49.5%">
+					<table id="tableHoliday3">
+						<tr>
+							<td>
+								<img id="imgHoliday3" alt="imgHoliday3" style="width: 100%; 
+													  height: auto; 
+													  border: 0; 
+													  visibility: hidden;">
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<span id="priceHoliday3" class="priceStyle" style="visibility: hidden;">
+								</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<span id="shortDescriptionHoliday3" class="shortDescriptionStyle" style="visibility: hidden;">
+								</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+
+				<td>
+					<span style="visibility: hidden">
+						Space
+					</span>
+				</td>
+
+				<td style="width: 49.5%">
+					<table id="tableHoliday4">
+						<tr>
+							<td>
+								<img id="imgHoliday4" alt="imgHoliday4" style="width: 100%; 
+													  height: auto; 
+													  border: 0; 
+													  visibility: hidden;">
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<span id="priceHoliday4" class="priceStyle" style="visibility: hidden;">
+								</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<span id="shortDescriptionHoliday4" class="shortDescriptionStyle" style="visibility: hidden;">
+								</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+				</tr>
+
+				<!-- ------------------------------------------------------------------------------- -->
+				<tr>
+					<td>
+						<span style="visibility: hidden">
+							Space
+						</span>
+					</td>
+				</tr>
+				<!-- ------------------------------------------------------------------------------- -->
+
+				<tr>
+					<td style="width: 49.5%">
+						<table id="tableHoliday5">
+							<tr>
+								<td>
+									<img id="imgHoliday5" alt="imgHoliday5" style="width: 100%; 
+													  height: auto; 
+													  border: 0; 
+													  visibility: hidden;">
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<span id="priceHoliday5" class="priceStyle" style="visibility: hidden;">
+									</span>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<span id="shortDescriptionHoliday5" class="shortDescriptionStyle" style="visibility: hidden;">
+									</span>
+								</td>
+							</tr>
+						</table>
+					</td>
+
+					<td>
+						<span style="visibility: hidden">
+							Space
+						</span>
+					</td>
+
+					<td style="width: 49.5%">
+						<table id="tableHoliday6">
+							<tr>
+								<td>
+									<img id="imgHoliday6" alt="imgHoliday6" style="width: 100%; 
+													  height: auto; 
+													  border: 0; 
+													  visibility: hidden;">
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<span id="priceHoliday6" class="priceStyle" style="visibility: hidden;">
+									</span>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<span id="shortDescriptionHoliday6" class="shortDescriptionStyle" style="visibility: hidden;">
+									</span>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<!-- ------------------------------------------------------------------------------- -->
+			</table>
+
+			<!-- ------------------------------------------------------------------------------- -->
+			<table style="padding-left: 42%; padding-top: 5%; border: 0px;">
+				<tr>
+					<td>
+						<img id="imgPreviousPage" alt="imgPreviousPage" src="Pictures/Buttons/ButtonArrowLeft-Grey.png" style="width: auto; 
+										  height: auto; 
+										  border: 0;">
+					</td>
+
+					<td>
+						<span id="spanCurrentPage">
+						</span>
+					</td>
+
+					<td>
+						<img id="imgNextPage" alt="imgNextPage" src="Pictures/Buttons/ButtonArrowRight-Grey.png" style="width: auto; 
+										  height: auto; 
+										  border: 0;">
+					</td>
+				</tr>
+			</table>
+			<!-- ------------------------------------------------------------------------------- -->
+		</div>
+	</div>
+
+	<div class="rightBanner">
+		<div class="rightBannerMiddleLeft">
+			<a href="Web/Register.html" id="buttonRegister">
+				<img src="Pictures/Buttons/ButtonRegister.png" alt="Register" style="width: auto; 
+								  height: auto; 
+								  border: 0;" onmouseenter="ButtonRegister_OnMouseEnter(this);" onmouseleave="ButtonRegister_OnMouseLeave(this);">
+			</a>
+			<span id="spanUserNames" style="display: none;">
+				User Names
+			</span>
+		</div>
+
+		<div class="rightBannerMiddleRight">
+			<a href="Web/Login.html" id="buttonLogin">
+				<img src="Pictures/Buttons/ButtonLogIn.png" alt="LogIn" style="width: auto; 
+								  height: auto; 
+								  border: 0;" onmouseenter="ButtonLogin_OnMouseEnter(this);" onmouseleave="ButtonLogin_OnMouseLeave(this);">
+			</a>
+			<a href="Index.html" id="buttonLogout" onclick="Logout()" style="display: none">
+				<img src="Pictures/Buttons/ButtonLogOut.png" alt="LogOut" style="width: auto; 
+								  height: auto; 
+								  border: 0;" onmouseenter="ButtonLogout_OnMouseEnter(this);" onmouseleave="ButtonLogout_OnMouseLeave(this);">
+			</a>
+		</div>
+	</div>
+</body>
+
 </html>

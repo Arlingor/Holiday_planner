@@ -1,167 +1,137 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-	
-		<link rel = "stylesheet"
-			  href = "../Style.css">
-			  
-		<script type = "text/javascript"
-			src = "../Libraries/Client.js">
-		</script>
-		
-		<title>
-			Holidays - Contact us
-		</title>
-	</head>
-	
-	<body onload = "ContactUs_OnLoad()">
-		<div class = "page">
-			<div class = "mainTopPanel">
-				<div class = "mainTopPanelContainer">
-					<span class = "mainTopPanelButton">
-						<a href = "../Index.html">
-							<img src = "../Pictures/Buttons/ButtonHome.png" 
-								 alt = "Home" 
-								 style = "width: auto; 
+
+<head>
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" href="../Style.css">
+
+	<script type="text/javascript" src="../Libraries/Client.js">
+	</script>
+
+	<title>
+		Holidays - Contact us
+	</title>
+</head>
+
+<body onload="ContactUs_OnLoad()">
+	<div class="page">
+		<div class="mainTopPanel">
+			<div class="mainTopPanelContainer">
+				<span class="mainTopPanelButton">
+					<a href="../Index.html">
+						<img src="../Pictures/Buttons/ButtonHome.png" alt="Home" style="width: auto; 
 										  height: auto; 
-										  border: 0;"
-								 onmouseenter = "ButtonHome_OnMouseEnter(this);"
-								 onmouseleave = "ButtonHome_OnMouseLeave(this);">
-						</a>
-						
-						<span class = "mainTopPanelButton">
-							<a href = "Search.html">
-								<img src = "../Pictures/Buttons/ButtonSearch.png" 
-									 alt = "Search" 
-									 style = "width: auto; 
+										  border: 0;" onmouseenter="ButtonHome_OnMouseEnter(this);" onmouseleave="ButtonHome_OnMouseLeave(this);">
+					</a>
+
+					<span class="mainTopPanelButton">
+						<a href="Search.html">
+							<img src="../Pictures/Buttons/ButtonSearch.png" alt="Search" style="width: auto; 
 											  height: auto; 
-											  border: 0;"
-									 onmouseenter = "ButtonSearch_OnMouseEnter(this);"
-									 onmouseleave = "ButtonSearch_OnMouseLeave(this);">
-							</a>
-							
-							<span class = "mainTopPanelButton">
-								<a href = "ContactUs.html">
-									<img src = "../Pictures/Buttons/ButtonContactUs.png" 
-										 alt = "Contact Us" 
-										 style = "width: auto; 
+											  border: 0;" onmouseenter="ButtonSearch_OnMouseEnter(this);" onmouseleave="ButtonSearch_OnMouseLeave(this);">
+						</a>
+
+						<span class="mainTopPanelButton">
+							<a href="ContactUs.html">
+								<img src="../Pictures/Buttons/ButtonContactUs.png" alt="Contact Us" style="width: auto; 
 												  height: auto; 
-												  border: 0;"
-										 onmouseenter = "ButtonContactUs_OnMouseEnter(this);"
-										 onmouseleave = "ButtonContactUs_OnMouseLeave(this);">
-								</a>
-							</span>
+												  border: 0;" onmouseenter="ButtonContactUs_OnMouseEnter(this);" onmouseleave="ButtonContactUs_OnMouseLeave(this);">
+							</a>
 						</span>
 					</span>
-				</div>
-			</div>
-			
-			<div class = "pageContent">
-				<h1>
-					Contact us:
-				</h1>
-				
-				<table style = "width: 70%; 
-								border: 0px">
-					<tr>
-						<td style = "width: 45%;">
-							RelaxHolidays АД
-						</td>
-						
-						<td style =  "width: 10%">
-							&nbsp&nbsp&nbsp
-						</td>
-						
-						<td style = "width: 45%;">
-							RelaxHolidays Ltd.
-						</td>
-					</tr>
-					<tr>
-						<td style = "width: 45%;">
-							София, ул. "Хаджи Димитър" №26
-						</td>
-						
-						<td style =  "width: 10%">
-							&nbsp&nbsp&nbsp
-						</td>
-						
-						<td style = "width: 45%;">
-							Sofia, st. "Hadji Dimitar" 26
-						</td>
-					</tr>
-					<tr>
-						<td style = "width: 45%;">
-							GSM: +359 87 888 7750
-						</td>
-						
-						<td style =  "width: 10%">
-							&nbsp&nbsp&nbsp
-						</td>
-						
-						<td style = "width: 45%;">
-							GSM: +359 87 888 7750
-						</td>
-					</tr>
-					<tr>
-						<td style = "width: 45%;">
-							Искрен Иванов
-						</td>
-						
-						<td style =  "width: 10%">
-							&nbsp&nbsp&nbsp
-						</td>
-						
-						<td style = "width: 45%;">
-							Iskren Ivanov
-						</td>
-					</tr>
-				</table>
-			</div>
-		</div>
-		
-		<div class = "rightBanner">
-			<div class = "rightBannerMiddleLeft">
-				<a href = "Register.html"
-				   id = "buttonRegister">
-					<img src = "../Pictures/Buttons/ButtonRegister.png" 
-						 alt = "Register" 
-						 style = "width: auto; 
-								  height: auto; 
-								  border: 0;"
-						 onmouseenter = "ButtonRegister_OnMouseEnter(this);"
-						 onmouseleave = "ButtonRegister_OnMouseLeave(this);">
-				</a>
-				<span id = "spanUserNames"
-					  style = "display: none">
-					User Names
 				</span>
 			</div>
-			
-			<div class = "rightBannerMiddleRight">
-				<a href = "Login.html"
-				   id = "buttonLogin">
-					<img src = "../Pictures/Buttons/ButtonLogIn.png" 
-						 alt = "LogIn" 
-						 style = "width: auto; 
-								  height: auto; 
-								  border: 0;"
-						 onmouseenter = "ButtonLogin_OnMouseEnter(this);"
-						 onmouseleave = "ButtonLogin_OnMouseLeave(this);">
-				</a>
-				<a href = "ContactUs.html"
-				   id = "buttonLogout"
-				   onclick = "Logout()"
-				   style = "display: none">
-					<img src = "../Pictures/Buttons/ButtonLogOut.png" 
-						 alt = "LogOut" 
-						 style = "width: auto; 
-								  height: auto; 
-								  border: 0;"
-						 onmouseenter = "ButtonLogout_OnMouseEnter(this);"
-						 onmouseleave = "ButtonLogout_OnMouseLeave(this);">
-				</a>
-			</div>
 		</div>
-	</body>
+
+		<div class="pageContent">
+			<h1>
+				Contact us:
+			</h1>
+
+			<table style="width: 70%; 
+								border: 0px">
+				<tr>
+					<td style="width: 45%;">
+						RelaxHolidays АД
+					</td>
+
+					<td style="width: 10%">
+						&nbsp&nbsp&nbsp
+					</td>
+
+					<td style="width: 45%;">
+						RelaxHolidays Ltd.
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 45%;">
+						София, ул. "Хаджи Димитър" №26
+					</td>
+
+					<td style="width: 10%">
+						&nbsp&nbsp&nbsp
+					</td>
+
+					<td style="width: 45%;">
+						Sofia, st. "Hadji Dimitar" 26
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 45%;">
+						GSM: +359 87 888 7750
+					</td>
+
+					<td style="width: 10%">
+						&nbsp&nbsp&nbsp
+					</td>
+
+					<td style="width: 45%;">
+						GSM: +359 87 888 7750
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 45%;">
+						Искрен Иванов
+					</td>
+
+					<td style="width: 10%">
+						&nbsp&nbsp&nbsp
+					</td>
+
+					<td style="width: 45%;">
+						Iskren Ivanov
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="rightBanner">
+		<div class="rightBannerMiddleLeft">
+			<a href="Register.html" id="buttonRegister">
+				<img src="../Pictures/Buttons/ButtonRegister.png" alt="Register" style="width: auto; 
+								  height: auto; 
+								  border: 0;" onmouseenter="ButtonRegister_OnMouseEnter(this);" onmouseleave="ButtonRegister_OnMouseLeave(this);">
+			</a>
+			<span id="spanUserNames" style="display: none">
+				User Names
+			</span>
+		</div>
+
+		<div class="rightBannerMiddleRight">
+			<a href="Login.html" id="buttonLogin">
+				<img src="../Pictures/Buttons/ButtonLogIn.png" alt="LogIn" style="width: auto; 
+								  height: auto; 
+								  border: 0;" onmouseenter="ButtonLogin_OnMouseEnter(this);" onmouseleave="ButtonLogin_OnMouseLeave(this);">
+			</a>
+			<a href="ContactUs.html" id="buttonLogout" onclick="Logout()" style="display: none">
+				<img src="../Pictures/Buttons/ButtonLogOut.png" alt="LogOut" style="width: auto; 
+								  height: auto; 
+								  border: 0;" onmouseenter="ButtonLogout_OnMouseEnter(this);" onmouseleave="ButtonLogout_OnMouseLeave(this);">
+			</a>
+		</div>
+	</div>
+</body>
+
 </html>
