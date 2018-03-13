@@ -1,29 +1,24 @@
-html
-{
+html {
 	height: auto;
 	width: auto;
-	
 	background-image: url("Pictures/Background/Forest.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	height: 100%;
 }
 
-body
-{
+body {
 	font-size: 100%;
 }
 
 /*Wooden sign banner-------------------------------------------------------------------*/
 
-div.rightBanner
-{
+.rightBanner {
 	position: absolute;
 	left: 70%;
 	top: 0%;
-	
 	width: 30%;
 	height: 30%;
-	
 	background-image: url("Pictures/Background/WoodenSign.png");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -32,20 +27,17 @@ div.rightBanner
 
 /*-------------------------------------------*/
 
-div.rightBannerMiddleLeft
-{
+.rightBannerMiddleLeft {
 	position: absolute;
 	left: 10%;
 	top: 55%;
-	
 	width: 38%;
 	height: auto;
 }
 
 /*-------------------------------------------*/
 
-div.rightBannerMiddleRight
-{
+.rightBannerMiddleRight {
 	position: absolute;
 	left: 50%;
 	top: 55%;
@@ -53,9 +45,8 @@ div.rightBannerMiddleRight
 
 /*-------------------------------------------*/
 
-#spanUserNames
-{
-	font-family: Consolas,monospace;
+#spanUserNames {
+	font-family: Consolas, monospace;
 	text-align: justify;
 	font-size: 1em;
 	font-weight: bold;
@@ -66,116 +57,103 @@ div.rightBannerMiddleRight
 /*Web page-----------------------------------------------------------------------------*/
 
 /*Main Top Panel----------------------------------------------------------*/
-div.mainTopPanel
-{
+
+.mainTopPanel {
 	display: table;
-	
 	position: relative;
 	left: 1%;
 	margin-top: 0.5%;
-	
 	width: 73%;
 	height: 3%;
-	
-	border-color: brown;
-	border-width: 1px;
+	border-width: 0.5px;
 	border-style: solid;
-	
 	background-image: url("Pictures/Textures/WoodenTexture.jpg");
 	background-repeat: repeat;
 	background-position: center;
+	border-radius: 8px;
 	/*background-size: auto auto;*/
 }
 
 /*-------------------------------------------*/
 
-div.mainTopPanelContainer
-{
+.mainTopPanelContainer {
 	display: table;
-	
 	position: relative;
 	margin-top: 0.5%;
 	margin-bottom: 0.5%;
-	
 	text-align: left;
-	
 	width: 100%;
 }
 
 /*-------------------------------------------*/
 
-span.mainTopPanelButton
-{
+span.mainTopPanelButton {
 	position: relative;
 	padding-left: 1%;
-	
 	width: 100%;
 }
 
 /*End - Main Top Panel----------------------------------------------------*/
 
 /*Page-continer-----------------------------------------------------------*/
-div.page
-{
+
+.page {
 	position: relative;
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: 10%;
 	margin-bottom: 10%;
-	
 	display: table;
-	
 	width: 80%;
 	max-width: 80%;
-	
 	text-align: center;
-	
-	border-color: black;
-	border-width: 1px;
+	border-radius: 10px;
+	border-width: 0px;
 	border-style: solid;
-	
 	background-image: url("Pictures/Textures/PaperTexture.jpg");
 	background-repeat: repeat;
 	background-position: center;
 }
+
 /*End - Page-continer-----------------------------------------------------*/
 
 /*Page content------------------------------------------------------------*/
-div.pageContent
-{
+
+.pageContent {
 	position: relative;
 	width: 94%;
-	
 	padding-left: 3%;
 	padding-right: 3%;
 	padding-top: 1.5%;
 	padding-bottom: 5%;
-	
 	display: table;
-	
 	text-align: left;
 }
+
 /*End - Page content------------------------------------------------------*/
 
 /*End - Web page-----------------------------------------------------------------------*/
 
 /*Text style---------------------------------------------------------------------------*/
-pre 
-{
-	font-family: Consolas,monospace;
+
+pre {
+	font-family: Consolas, monospace;
 	text-align: justify;
-	
-    white-space: pre-wrap;       /* Since CSS 2.1 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	white-space: pre-wrap;
+	/* Since CSS 2.1 */
+	white-space: -moz-pre-wrap;
+	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;
+	/* Opera 4-6 */
+	white-space: -o-pre-wrap;
+	/* Opera 7 */
+	word-wrap: break-word;
+	/* Internet Explorer 5.5+ */
 }
 
 /*-------------------------------------------*/
 
-#preTimeLimit
-{
+#preTimeLimit {
 	text-align: center;
 	font-size: 1em;
 	color: grey;
@@ -183,9 +161,8 @@ pre
 
 /*-------------------------------------------*/
 
-.priceStyle
-{
-	font-family: Consolas,monospace;
+.priceStyle {
+	font-family: Consolas, monospace;
 	text-align: center;
 	font-size: 1.5em;
 	color: green;
@@ -193,9 +170,8 @@ pre
 
 /*-------------------------------------------*/
 
-.shortDescriptionStyle
-{
-	font-family: Consolas,monospace;
+.shortDescriptionStyle {
+	font-family: Consolas, monospace;
 	text-align: justify;
 	font-size: 1.25em;
 	font-weight: bold;
@@ -203,8 +179,7 @@ pre
 
 /*-------------------------------------------*/
 
-.voteStyle
-{
+.voteStyle {
 	border: 1px solid grey;
 	background-color: lightgrey;
 	font-size: 1em;
@@ -213,8 +188,7 @@ pre
 
 /*-------------------------------------------*/
 
-.errorStyle
-{
+.errorStyle {
 	border: 1px solid grey;
 	background-color: lightgrey;
 	font-size: 1em;
@@ -225,8 +199,7 @@ pre
 
 /*-------------------------------------------*/
 
-#commentsCount
-{
+#commentsCount {
 	color: grey;
 	font-weight: bold;
 	font-size: 1.5em;
@@ -235,23 +208,20 @@ pre
 
 /*-------------------------------------------*/
 
-#taComment
-{
+#taComment {
 	font-size: 1em;
 	text-align: justify;
 }
 
 /*-------------------------------------------*/
 
-textarea
-{
+textarea {
 	resize: none;
 }
 
 /*-------------------------------------------*/
 
-#tableComments
-{
+#tableComments {
 	border: 1px solid grey;
 	width: 62%;
 	margin-left: 10%;
@@ -259,8 +229,7 @@ textarea
 
 /*-------------------------------------------*/
 
-#tableComments tr
-{
+#tableComments tr {
 	border: 1px solid grey;
 	width: 100%;
 }
