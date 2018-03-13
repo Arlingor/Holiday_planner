@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Mina');
+
+*{
+	font-family: 'Mina', sans-serif;
+}
+
 html {
 	height: auto;
 	width: auto;
-	background-image: url("Pictures/Background/Forest.jpg");
+	background-image: url("Pictures/Background/Forest.jpg") !important;
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100%;
@@ -9,6 +15,7 @@ html {
 
 body {
 	font-size: 100%;
+	background-color: rgba(255, 255, 255, 0) !important;
 }
 
 /*Wooden sign banner-------------------------------------------------------------------*/
@@ -128,6 +135,7 @@ span.mainTopPanelButton {
 	padding-bottom: 5%;
 	display: table;
 	text-align: left;
+	margin-top: 60px;
 }
 
 /*End - Page content------------------------------------------------------*/
