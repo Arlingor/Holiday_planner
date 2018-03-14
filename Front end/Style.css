@@ -19,7 +19,9 @@ body {
 }
 
 /*Wooden sign banner-------------------------------------------------------------------*/
-
+#buttonLogin{
+	
+}
 .rightBanner {
 	position: absolute;
 	left: 70%;
@@ -46,7 +48,7 @@ body {
 
 .rightBannerMiddleRight {
 	position: absolute;
-	left: 50%;
+	left: 60%;
 	top: 55%;
 }
 
@@ -242,4 +244,27 @@ textarea {
 	width: 100%;
 }
 
+@media only screen and (max-width: 600px) {
+	
+	.rightBanner {
+		position: absolute;
+		left: 2%;
+		top: 7%;
+		width: 89%;
+		height: 30%;
+		background-image: none;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100% auto;
+	}
+	.mainTopPanelContainer {
+		display: table;
+		position: relative;
+		margin-top: 0.5%;
+		margin-bottom: 0.5%;
+		width: 100%;
+		line-height: 2;
+		margin-left: 20%;
+	}
+}
 /*End - Text style---------------------------------------------------------------------*/

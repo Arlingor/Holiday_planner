@@ -3,11 +3,13 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="../Style.css">
 
 	<script type="text/javascript" src="../Libraries/Client.js">
 	</script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<title>
 		Holidays - Login
@@ -60,7 +62,7 @@
 					<td style="width: 33%;">
 						Username:
 						<br>
-						<input id="inputUsername" type="text" size="33%" maxlength="20" pattern="[A-Za-z0-9._-]{4,20}" title="4-20 characters: letters, numbers ._-"
+						<input class="form-control" id="inputUsername" type="text" size="33%" maxlength="20" pattern="[A-Za-z0-9._-]{4,20}" title="4-20 characters: letters, numbers ._-"
 						    required>
 						<br>
 						<br>
@@ -72,7 +74,7 @@
 					<td style="width: 33%;">
 						Password:
 						<br>
-						<input id="inputPassword" type="password" size="33%" maxlength="30" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,30}" title="6-30 characters: At least one capital letter, at least one small letter and at least one number."
+						<input class="form-control" id="inputPassword" type="password" size="33%" maxlength="30" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,30}" title="6-30 characters: At least one capital letter, at least one small letter and at least one number."
 						    required>
 						<br>
 						<br>
@@ -89,7 +91,7 @@
 
 				<tr>
 					<td colspan="3">
-						<input name="buttonLogin" type="submit" value="Login" style="min-width: 80px; 
+						<input class="btn btn-primary"  name="buttonLogin" type="submit" value="Login" style="min-width: 100px; 
 											width: 15%; 
 											margin-left: 35%;" onclick="Login()">
 					</td>

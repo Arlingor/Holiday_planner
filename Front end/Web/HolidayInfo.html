@@ -3,11 +3,13 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="../Style.css">
 
 	<script type="text/javascript" src="../Libraries/Client.js">
 	</script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<title>
 		Holidays - Info
@@ -20,21 +22,21 @@
 			<div class="mainTopPanelContainer">
 				<span class="mainTopPanelButton">
 					<a href="../Index.html">
-						<img src="../Pictures/Buttons/ButtonHome.png" alt="Home" style="width: auto; 
+						<img class="rounded" src="../Pictures/Buttons/ButtonHome.png" alt="Home" style="width: auto; 
 										  height: auto; 
 										  border: 0;" onmouseenter="ButtonHome_OnMouseEnter(this);" onmouseleave="ButtonHome_OnMouseLeave(this);">
 					</a>
 
 					<span class="mainTopPanelButton">
 						<a href="Search.html">
-							<img src="../Pictures/Buttons/ButtonSearch.png" alt="Search" style="width: auto; 
+							<img class="rounded" src="../Pictures/Buttons/ButtonSearch.png" alt="Search" style="width: auto; 
 											  height: auto; 
 											  border: 0;" onmouseenter="ButtonSearch_OnMouseEnter(this);" onmouseleave="ButtonSearch_OnMouseLeave(this);">
 						</a>
 
 						<span class="mainTopPanelButton">
 							<a href="ContactUs.html">
-								<img src="../Pictures/Buttons/ButtonContactUs.png" alt="Contact Us" style="width: auto; 
+								<img class="rounded" src="../Pictures/Buttons/ButtonContactUs.png" alt="Contact Us" style="width: auto; 
 												  height: auto; 
 												  border: 0;" onmouseenter="ButtonContactUs_OnMouseEnter(this);" onmouseleave="ButtonContactUs_OnMouseLeave(this);">
 							</a>
@@ -51,7 +53,7 @@
 					<td style="height: 100px; 
 									 width: auto; 
 									 text-align: center;" colspan="3">
-						<img id="imgHoliday" alt="imgHoliday" style="width: auto; 
+						<img class="rounded" id="imgHoliday" alt="imgHoliday" style="width: auto; 
 										  height: 90%; 
 										  border: 0;">
 					</td>
@@ -60,13 +62,13 @@
 				<tr>
 					<td style="padding-left: 40%;" colspan="3">
 						<span>
-							<img id="imgPreviousImage" alt="imgPreviousImage" src="../Pictures/Buttons/ButtonArrowLeft-Grey.png" style="width: auto;
+							<img class="rounded" id="imgPreviousImage" alt="imgPreviousImage" src="../Pictures/Buttons/ButtonArrowLeft-Grey.png" style="width: auto;
 											  height: auto; 
 											  border: 0;"> &nbsp;
 							<span id="spanCurrentImage">
 							</span>
 							&nbsp;
-							<img id="imgNextImage" alt="imgNextImage" src="../Pictures/Buttons/ButtonArrowRight-Grey.png" style="width: auto;
+							<img class="rounded" id="imgNextImage" alt="imgNextImage" src="../Pictures/Buttons/ButtonArrowRight-Grey.png" style="width: auto;
 											  height: auto; 
 											  border: 0;">
 						</span>
@@ -85,13 +87,13 @@
 					<td style="text-align: left;">
 						<span id="spanLikesCount" class="voteStyle">
 						</span>
-						<img id="imgButtonLike" src="../Pictures/Buttons/ButtonLike_BW.png" alt="Like" style="width: auto; 
+						<img class="rounded" id="imgButtonLike" src="../Pictures/Buttons/ButtonLike_BW.png" alt="Like" style="width: auto; 
 										  height: auto; 
 										  border: 0;">
 
 						<span id="spanDislikesCount" class="voteStyle">
 						</span>
-						<img id="imgButtonDislike" src="../Pictures/Buttons/ButtonDislike_BW.png" alt="Dislike" style="width: auto; 
+						<img class="rounded" id="imgButtonDislike" src="../Pictures/Buttons/ButtonDislike_BW.png" alt="Dislike" style="width: auto; 
 										  height: auto; 
 										  border: 0;">
 					</td>
@@ -102,7 +104,7 @@
 					</td>
 
 					<td style="text-align: left;">
-						<img id="imgButtonBuy" src="../Pictures/Buttons/ButtonBuy.png" alt="Buy" style="width: auto; 
+						<img class="rounded" id="imgButtonBuy" src="../Pictures/Buttons/ButtonBuy.png" alt="Buy" style="width: auto; 
 										  height: auto; 
 										  border: 0;" onclick="HolidayInfo_ButtonBuy_OnClick();" onmouseenter="HolidayInfo_ButtonBuy_OnMouseEnter(this);"
 						    onmouseleave="HolidayInfo_ButtonBuy_OnMouseLeave(this);">
@@ -152,12 +154,12 @@
 				<tr>
 					<td colspan="2" style="padding-left: 10%;
 									 width: 80%;">
-						<textarea id="taComment" placeholder="Write your comment here..."></textarea>
+						<textarea class="form-control" id="taComment" placeholder="Write your comment here..."></textarea>
 					</td>
 
 					<td style="text-align: center;
 									 width: 20%;">
-						<img id="imgButtonComment" src="../Pictures/Buttons/ButtonComment.png" alt="Comment" style="width: auto; 
+						<img class="rounded" id="imgButtonComment" src="../Pictures/Buttons/ButtonComment.png" alt="Comment" style="width: auto; 
 										  height: auto; 
 										  border: 0;
 										  margin-right: 10%;
@@ -175,7 +177,7 @@
 	<div class="rightBanner">
 		<div class="rightBannerMiddleLeft">
 			<a href="Register.html" id="buttonRegister">
-				<img src="../Pictures/Buttons/ButtonRegister.png" alt="Register" style="width: auto; 
+				<img class="rounded" src="../Pictures/Buttons/ButtonRegister.png" alt="Register" style="width: auto; 
 								  height: auto; 
 								  border: 0;" onmouseenter="ButtonRegister_OnMouseEnter(this);" onmouseleave="ButtonRegister_OnMouseLeave(this);">
 			</a>
@@ -186,12 +188,12 @@
 
 		<div class="rightBannerMiddleRight">
 			<a href="Login.html" id="buttonLogin">
-				<img src="../Pictures/Buttons/ButtonLogIn.png" alt="LogIn" style="width: auto; 
+				<img class="rounded" src="../Pictures/Buttons/ButtonLogIn.png" alt="LogIn" style="width: auto; 
 								  height: auto; 
 								  border: 0;" onmouseenter="ButtonLogin_OnMouseEnter(this);" onmouseleave="ButtonLogin_OnMouseLeave(this);">
 			</a>
 			<a href="HolidayInfo.html" id="buttonLogout" onclick="Logout()" style="display: none">
-				<img src="../Pictures/Buttons/ButtonLogOut.png" alt="LogOut" style="width: auto; 
+				<img class="rounded" src="../Pictures/Buttons/ButtonLogOut.png" alt="LogOut" style="width: auto; 
 								  height: auto; 
 								  border: 0;" onmouseenter="ButtonLogout_OnMouseEnter(this);" onmouseleave="ButtonLogout_OnMouseLeave(this);">
 			</a>
