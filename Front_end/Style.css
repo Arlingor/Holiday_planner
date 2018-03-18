@@ -10,8 +10,8 @@ html {
 	background-image: url("Pictures/Background/Forest.jpg") !important;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100%;
 	opacity: 0.92;
+	height: 100%;
 }
 
 body {
@@ -20,9 +20,7 @@ body {
 }
 
 /*Wooden sign banner-------------------------------------------------------------------*/
-#buttonLogin{
-	
-}
+
 .rightBanner {
 	position: absolute;
 	left: 70%;

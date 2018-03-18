@@ -8,8 +8,8 @@ var Port = 8001;
 var Pool = MySQL.createPool({
 	connectionLimit: 10,
 	host: 'localhost',
-	user: 'Admin',
-	password: 'TU-Gabrovo-MySQL123',
+	user: 'root',
+	password: 'BlackSwan93!',
 	database: 'mydb'
 });
 //-Global Variables ----------------------------------------------------------------
