@@ -9,7 +9,7 @@ var IndexPage;
 var CurrentImage;
 
 function Register() {
-	var regExpResult = 1;
+	var regExpResult = 1; 	 	
 	var params;
 	//--------------
 	var nickname;

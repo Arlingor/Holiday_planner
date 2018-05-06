@@ -10,7 +10,7 @@ var Pool = MySQL.createPool({
 	host: 'localhost',
 	user: 'root',
 	password: 'BlackSwan93!',
-	database: 'mydb'
+	database: 'mysql1'
 });
 //-Global Variables ----------------------------------------------------------------
 

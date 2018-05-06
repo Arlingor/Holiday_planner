@@ -5,28 +5,31 @@
 }
 
 html {
-	height: auto;
-	width: auto;
-	background-image: url("Pictures/Background/Forest.jpg") !important;
+	/* height: auto;
+	width: auto; */
+	background: url("Pictures/Background/Forest.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
-	background-repeat: no-repeat;
-	opacity: 0.92;
-	height: 100%;
 }
 
 body {
 	font-size: 100%;
 	background-color: rgba(255, 255, 255, 0) !important;
 }
-
+.map{
+	display: inline-block;
+	padding: 10px;
+}
 /*Wooden sign banner-------------------------------------------------------------------*/
 
 .rightBanner {
-	position: absolute;
+	position: fixed;
 	left: 70%;
 	top: 0%;
-	width: 30%;
-	height: 30%;
+	width: 25%;
+	height: 25%;
 	background-image: url("Pictures/Background/WoodenSign.png");
 	background-repeat: no-repeat;
 	background-position: center;
