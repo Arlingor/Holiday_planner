@@ -356,7 +356,7 @@ function Index_OnLoad() {
 		document.getElementById("buttonLogin").style.display = "none";
 
 		document.getElementById("spanUserNames").style.display = "block";
-		document.getElementById("spanUserNames").style.width = "80%";
+		document.getElementById("spanUserNames").style.width = "90%";
 		document.getElementById("spanUserNames").innerHTML = "<b>Welcome back,<br>" + firstName + " " + lastName + "</b>";
 		document.getElementById("buttonLogout").style.display = "block";
 	} else {
@@ -542,7 +542,7 @@ function Search_OnLoad() {
 		document.getElementById("buttonLogin").style.display = "none";
 
 		document.getElementById("spanUserNames").style.display = "block";
-		document.getElementById("spanUserNames").style.width = "80%";
+		document.getElementById("spanUserNames").style.width = "90%";
 		document.getElementById("spanUserNames").innerHTML = "<b>Welcome back,<br>" + firstName + " " + lastName + "</b>";
 		document.getElementById("buttonLogout").style.display = "block";
 	} else {
@@ -572,7 +572,7 @@ function ContactUs_OnLoad() {
 		document.getElementById("buttonLogin").style.display = "none";
 
 		document.getElementById("spanUserNames").style.display = "block";
-		document.getElementById("spanUserNames").style.width = "80%";
+		document.getElementById("spanUserNames").style.width = "90%";
 		document.getElementById("spanUserNames").innerHTML = "<b>Welcome back,<br>" + firstName + " " + lastName + "</b>";
 		document.getElementById("buttonLogout").style.display = "block";
 	} else {
@@ -609,7 +609,7 @@ function HolidayInfo_OnLoad() {
 		document.getElementById("buttonLogin").style.display = "none";
 
 		document.getElementById("spanUserNames").style.display = "block";
-		document.getElementById("spanUserNames").style.width = "80%";
+		document.getElementById("spanUserNames").style.width = "90%";
 		document.getElementById("spanUserNames").innerHTML = "<b>Welcome back,<br>" + firstName + " " + lastName + "</b>";
 		document.getElementById("buttonLogout").style.display = "block";
 

@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Mina');
-
-*{
+@import url('https://fonts.googleapis.com/css?family=Skranji');
+* {
 	font-family: 'Mina', sans-serif;
 }
 
 html {
 	/* height: auto;
 	width: auto; */
-	background: url("Pictures/Background/Forest.jpg") no-repeat center center fixed; 
+	background: url("Pictures/Background/Forest.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -18,10 +18,12 @@ body {
 	font-size: 100%;
 	background-color: rgba(255, 255, 255, 0) !important;
 }
-.map{
+
+.map {
 	display: inline-block;
 	padding: 10px;
 }
+
 /*Wooden sign banner-------------------------------------------------------------------*/
 
 .rightBanner {
@@ -57,10 +59,12 @@ body {
 /*-------------------------------------------*/
 
 #spanUserNames {
-	font-family: Consolas, monospace;
+	font-family: 'Skranji', cursive !important;
 	text-align: justify;
-	font-size: 1em;
+	font-size: 25px;
 	font-weight: bold;
+	word-wrap: break-word;
+	color: #b62f2f;
 }
 
 /*End - Wooden sign banner-------------------------------------------------------------*/
@@ -247,7 +251,6 @@ textarea {
 }
 
 @media only screen and (max-width: 600px) {
-	
 	.rightBanner {
 		position: absolute;
 		left: 2%;
@@ -269,4 +272,5 @@ textarea {
 		margin-left: 20%;
 	}
 }
+
 /*End - Text style---------------------------------------------------------------------*/
